@@ -1,0 +1,21 @@
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| github_profiles | CREATE TABLE `github_profiles` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `username` varchar(255) DEFAULT NULL,
+  `name` varchar(255) DEFAULT NULL,
+  `public_repos` int DEFAULT NULL,
+  `followers` int DEFAULT NULL,
+  `following` int DEFAULT NULL,
+  `total_stars` int DEFAULT NULL,
+  `total_forks` int DEFAULT NULL,
+  `account_age_days` int DEFAULT NULL,
+  `developer_score` decimal(10,2) DEFAULT NULL,
+  `profile_url` varchar(500) DEFAULT NULL,
+  `analyzed_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  `bio` text,
+  `company` varchar(255) DEFAULT NULL,
+  `location` varchar(255) DEFAULT NULL,
+  `blog` varchar(255) DEFAULT NULL,
+  `top_repo` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `username` (`username`)
